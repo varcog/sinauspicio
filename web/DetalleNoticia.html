@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Mirrored from demo.themeum.com/html/newedge/single-article.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Aug 2017 04:53:26 GMT -->
+    <head>
+        <meta charset="utf-8">
+        <title>Kandire</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/cs-select.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/nanoscroller.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/presets/preset1.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link id="preset" rel="stylesheet" type="text/css" href="css/presets/preset1.css">
+    </head>
+    <body class="sticky-header">
+        <div class="body-innerwrapper">
+            <header>                
+                <div id="newedge-top-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div id="logo" class="col-xs-4 col-sm-3 col-md-3 hidden-sm hidden-xs">
+                                <img src="img/logo.png" alt="logo">
+                            </div> <!-- //logo -->
+                            <div class="col-sm-12 col-md-9">
+                                <div class="top-right">
+                                    <div class="newedge-date">
+                                        <span class="fecha"></span>
+                                    </div> <!-- //date -->
+                                    <div class="newedge-language">
+                                        <select class="cs-select cs-skin-border">
+                                            <!-- <option value="" disabled selected>Language</option> -->
+                                            <option value="Spanish" selected>Es</option>
+                                            <!--<option value="German">de</option>
+                                            <option value="Arabic">ar</option>-->
+                                        </select>
+                                    </div> <!-- //language -->
+
+                                    <div class="newedge-login">
+                                        <a href="#" role="button" data-toggle="modal" data-target="#login">
+                                            <i class="fa fa-user"></i>
+                                        </a>
+                                        <!-- Login modal -->
+                                        <div id="login" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" onclick="login();" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+                                                        <h1 class="text-left">Ingresar</h1>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="#" method="post" id="login-form">
+                                                            <fieldset class="userdata">
+                                                                <input id="username" placeholder="Usuario" type="text" name="username" class="form-control">
+                                                                <input id="password" type="password" placeholder="Contraseña" name="password" class="form-control">
+                                                                <div class="remember-wrap">
+                                                                    <input id="remember" type="checkbox" name="remember" class="inputbox" value="yes">
+                                                                    <label for="remember">recordarme</label>
+                                                                </div>
+                                                                <div class="button-wrap pull-left">
+                                                                    <input type="button" onclick="login();" name="Submit" class="btn btn-block btn-success" value="Ingresar">
+                                                                </div>                                                                
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="newedge-search">
+                                        <div class="search-icon-wrapper">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        <div class="search-wrapper">
+                                            <form action="#" method="post">
+                                                <input name="searchword" maxlength="200" class="inputboxnewedge-top-search" type="text" size="20" placeholder="Buscar ...">
+                                                <i id="search-close" class="fa fa-close"></i>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- navigation mobile version -->
+                <div id="mobile-nav-bar" class="mobile-nav-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="visible-sm visible-xs col-sm-12">
+                                <div id="logo" class="mobile-logo pull-left">
+                                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                                </div>
+                                <a id="offcanvas-toggler" class="pull-right" href="#"><i class="fa fa-bars"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- navigation -->
+                <nav id="navigation-bar" class="navigation hidden-sm hidden-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline megamenu-parent" id="menu">
+
+                                </ul>
+                            </div> <!-- col-sm-12 -->
+                        </div> <!-- //row -->
+                    </div> <!-- //container -->
+                </nav>                
+            </header>            
+            <section class="newedge-slider default img-overlay">
+                <div class="newedge-slider-content">
+                    <div id="main-slider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox" id="portadas">
+                            <div class="item active" style="background-image: url('img/logo_grande.png');">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class='col-md-7 col-sm-7 col-xs-12 next-post'>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- //carousel-inner -->
+                        <div class="container" id="car_inner" style="display:none;">
+                            <div class="customNavigation carousel-controls">
+                                <a class="left" data-target="#main-slider" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                                <a class="right" data-target="#main-slider" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--====  End of PAGE TITLE  ====-->
+            <!--==================================
+            =            START MAIN WRAPPER      =
+            ===================================-->
+            <section class="main-wrapper single-category">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="img/post-details/post-image01.jpg" class="img-100p" alt="img">
+                                    <h2 class="main-entry-title">Guerra en el medio oriente por falta de petroleo , Iran esta listo para la guerra</h2>
+                                    <div class="entry-blog-meta">
+                                        <div class="entry-blog-meta-list">
+
+                                            <div class="author-avatar-text">
+                                                <p class="author"> <a href="#" title="Posts by NewEdge" rel="author">Santa Cruz</a></p>
+                                                <span class="entry-date"><time>31 de Agosto</time></span>,
+                                                <span class="cats"><a href="#" rel="category tag">Nacional</a></span>
+                                            </div>
+                                        </div> <!-- //entry-blog-meta-list -->
+
+                                        <div class="entry-blog-meta-list">
+                                            <div class="share-count">
+                                                <span class="number">1500</span><span>Visitas</span>
+                                            </div>
+                                            <div class="newedge-social-share">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="icon-facebook"><i class="fa fa-facebook"></i>Compartir en Facebook</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="icon-twitter"><i class="fa fa-twitter"></i>Tweet en Twitter</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="icon-google"><i class="fa fa-google-plus"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="icon-linkedin"><i class="fa fa-linkedin"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="icon-google"><i class="fa fa-pinterest"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div> <!-- //entry-blog-meta-list -->
+                                    </div> <!-- //entry-blog-meta -->
+
+                                    <div class="entry-summary">
+                                        <p>
+                                            La información fue proporcionada por Ronald Moreno, presidente de la comisión mixta conformada para adecuar los 49 artículos observados.
+                                            Resaltando la participación en las audiencias públicas de autoridades, pueblos indígenas y organización civil organizada, Moreno indicó que en las siguientes fases se elaborará un informe para luego aprobar en el órgano deliberante la readecuación estatutaria antes de que llegue a manos del T.C.P.
+
+                                            “La prioridad de la Asamblea Legislativa Departamental es tener el Estatuto cruceño con constitucionalidad plena y ponerlo en vigencia lo antes posible”, dijo Moreno al remarcar que la demanda de las regiones cruceñas es el de contar con un Estatuto puesto en vigencia lo antes posible.
+                                            Manifestó que contar con un Estatuto significa tener más normativas para que continúen llegando las obras, servicios y proyectos de desarrollo productivo.
+                                        </p>
+                                        <p>
+                                            La información fue proporcionada por Ronald Moreno, presidente de la comisión mixta conformada para adecuar los 49 artículos observados.
+                                            Resaltando la participación en las audiencias públicas de autoridades, pueblos indígenas y organización civil organizada, Moreno indicó que en las siguientes fases se elaborará un informe para luego aprobar en el órgano deliberante la readecuación estatutaria antes de que llegue a manos del T.C.P.
+
+                                            “La prioridad de la Asamblea Legislativa Departamental es tener el Estatuto cruceño con constitucionalidad plena y ponerlo en vigencia lo antes posible”, dijo Moreno al remarcar que la demanda de las regiones cruceñas es el de contar con un Estatuto puesto en vigencia lo antes posible.
+                                            Manifestó que contar con un Estatuto significa tener más normativas para que continúen llegando las obras, servicios y proyectos de desarrollo productivo.
+                                        </p>
+                                    </div> <!-- //entry-summary -->
+
+                                    <div class="entry-summary">
+                                        <p>
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                                        </p>
+                                        <p class="highlighted">
+                                            ‘’LUEGO DE HABER RECORRIDO DURANTE 45 DÍAS LAS PROVINCIAS, PUEBLOS INDÍGENAS E INSTITUCIONES CRUCEÑAS, EXPLICANDO EL PROCESO DE ADECUACIÓN ESTATUTARIA, EL TEXTO QUE REGIRÁ A LOS CRUCEÑOS INGRESA A SU ETAPA FINAL ANTES DE SER ENVIADO AL TRIBUNAL CONSTITUCIONAL PLURINACIONAL (T.C.P.) PARA SU REVISIÓN.‘’
+                                        </p>
+                                        <p>
+                                            La información fue proporcionada por Ronald Moreno, presidente de la comisión mixta conformada para adecuar los 49 artículos observados.
+                                            Resaltando la participación en las audiencias públicas de autoridades, pueblos indígenas y organización civil organizada, Moreno indicó que en las siguientes fases se elaborará un informe para luego aprobar en el órgano deliberante la readecuación estatutaria antes de que llegue a manos del T.C.P.
+
+                                            “La prioridad de la Asamblea Legislativa Departamental es tener el Estatuto cruceño con constitucionalidad plena y ponerlo en vigencia lo antes posible”, dijo Moreno al remarcar que la demanda de las regiones cruceñas es el de contar con un Estatuto puesto en vigencia lo antes posible.
+                                            Manifestó que contar con un Estatuto significa tener más normativas para que continúen llegando las obras, servicios y proyectos de desarrollo productivo.
+                                        </p>
+
+                                    </div> <!-- //entry-summary -->
+
+
+                                    <!-- //post-meta-info -->
+                                </div> <!-- //col-sm-12 -->
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="section-title">
+                                        <h3> <span class="cat-icon"><i class="fa fa-bars"></i></span>Fotos</h3>
+                                    </div>
+                                </div> <!-- //section-title -->
+                                <div class="simple-article-overlay mtt30">
+                                    <div class="col-sm-4">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail01.jpg" alt="img"></div>
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Descripcion Foto</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+
+                                </div>
+                                <div class="simple-article-overlay mtt30">
+                                    <div class="col-sm-4">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail01.jpg" alt="img"></div>
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Descripcion Foto</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+
+                                </div>
+                                <div class="simple-article-overlay mtt30">
+                                    <div class="col-sm-4">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail01.jpg" alt="img"></div>
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Descripcion Foto</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+
+                                </div>
+                                <div class="simple-article-overlay mtt30">
+                                    <div class="col-sm-4">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail01.jpg" alt="img"></div>
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Descripcion Foto</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+
+                                </div>
+                                <div class="simple-article-overlay mtt30">
+                                    <div class="col-sm-4">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail01.jpg" alt="img"></div>
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Descripcion Foto</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="section-title">
+                                        <h3> <span class="cat-icon"><i class="fa fa-facebook"></i></span>Facebook</h3>
+                                    </div>
+                                </div> <!-- //section-title -->
+
+                                <div class="simple-article-overlay mtt30">
+                                    <div class="col-sm-12">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fwww.kandire.bo%2Fposts%2F516321722039362&width=500" width="500" height="771" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                                    </div> <!-- //col-sm-4 -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="section-title">
+                                        <h3> <span class="cat-icon"><i class="fa fa-share-alt"></i></span>Youtube</h3>
+                                    </div>
+                                </div> <!-- //section-title -->
+                                <div class="simple-article-overlay mtt30">
+                                    <div class="col-sm-9">
+                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ubrs_naZSD0" frameborder="0" allowfullscreen></iframe>
+                                    </div> <!-- //col-sm-4 -->
+                                </div>
+                            </div>
+                            <!-- Advertisement two -->
+                            <div class="advertisement">
+                                <div class="row">
+                                    <div class="col-sm-12 mtt50 mtb60">
+                                        <img src="img/large-ad2.jpg" alt="advertisement">
+                                    </div>
+                                </div>
+                            </div> <!-- //Advertisement two -->
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="section-title">
+                                        <h3> <span class="cat-icon"><i class="fa fa-book"></i></span>Mas Noticias</h3>
+                                    </div>
+                                </div> <!-- //section-title -->
+
+                                <div class="simple-article-overlay mtt30">
+                                    <div class="col-sm-3">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail01.jpg" alt="img"></div>
+                                                <div class="post-share-social">
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                    <a href="#" class="fa fa-google-plus"></a>
+                                                    <a href="#" class="fa fa-pinterest"></a>
+                                                    <a href="#" class="fa fa-linkedin"></a>
+                                                    <div class="share-icon"><i class="fa fa-share-alt"></i></div>
+                                                </div> <!-- //post-share-social -->
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Aliquam sed felis ligula. Duis non nulla magna</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+                                    <div class="col-sm-3">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail02.jpg" alt="img"></div>
+                                                <div class="post-share-social">
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                    <a href="#" class="fa fa-google-plus"></a>
+                                                    <a href="#" class="fa fa-pinterest"></a>
+                                                    <a href="#" class="fa fa-linkedin"></a>
+                                                    <div class="share-icon"><i class="fa fa-share-alt"></i></div>
+                                                </div> <!-- //post-share-social -->
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Aliquam sed felis ligula. Duis non nulla magna</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+                                    <div class="col-sm-3">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail03.jpg" alt="img"></div>
+                                                <div class="post-share-social">
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                    <a href="#" class="fa fa-google-plus"></a>
+                                                    <a href="#" class="fa fa-pinterest"></a>
+                                                    <a href="#" class="fa fa-linkedin"></a>
+                                                    <div class="share-icon"><i class="fa fa-share-alt"></i></div>
+                                                </div> <!-- //post-share-social -->
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Aliquam sed felis ligula. Duis non nulla magna</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+                                    <div class="col-sm-3">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail04.jpg" alt="img"></div>
+                                                <div class="post-share-social">
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                    <a href="#" class="fa fa-google-plus"></a>
+                                                    <a href="#" class="fa fa-pinterest"></a>
+                                                    <a href="#" class="fa fa-linkedin"></a>
+                                                    <div class="share-icon"><i class="fa fa-share-alt"></i></div>
+                                                </div> <!-- //post-share-social -->
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Aliquam sed felis ligula. Duis non nulla magna</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+                                    <div class="col-sm-3">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail05.jpg" alt="img"></div>
+                                                <div class="post-share-social">
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                    <a href="#" class="fa fa-google-plus"></a>
+                                                    <a href="#" class="fa fa-pinterest"></a>
+                                                    <a href="#" class="fa fa-linkedin"></a>
+                                                    <div class="share-icon"><i class="fa fa-share-alt"></i></div>
+                                                </div> <!-- //post-share-social -->
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Aliquam sed felis ligula. Duis non nulla magna</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+                                    <div class="col-sm-3">
+                                        <article class="gradient-color04">
+                                            <div class="article-inner">
+                                                <div class="overlay"></div>
+                                                <div class="img-wrapper"><img class="img-100p latest-post-image" src="img/article-img/thumbnail06.jpg" alt="img"></div>
+                                                <div class="post-share-social">
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                    <a href="#" class="fa fa-google-plus"></a>
+                                                    <a href="#" class="fa fa-pinterest"></a>
+                                                    <a href="#" class="fa fa-linkedin"></a>
+                                                    <div class="share-icon"><i class="fa fa-share-alt"></i></div>
+                                                </div> <!-- //post-share-social -->
+                                                <div class="article-info">
+                                                    <h4 class="entry-title">
+                                                        <a href="single-article.html">Aliquam sed felis ligula. Duis non nulla magna</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div> <!-- //col-sm-4 -->
+                                </div>
+                            </div> <!-- //row -->
+
+
+                        </div> <!-- //col-sm-9 -->
+
+
+
+                        <div class="col-sm-3">
+                            <!-- Social counter -->
+                            <div class="social-counter">
+                                <div class="section-title">
+                                    <h3> <span class="cat-icon"><i class="fa fa-share-alt"></i></span>Conectate</h3>
+                                </div> <!-- //section-title -->
+
+                                <div class="clearfix">
+                                    <div class="col-sm-6 col-xs-6 social-common-bar">
+                                        <div class="social-icon"><a href="#" target="_blank"><i class="twitter-icon fa fa-twitter"></i></a></div>
+                                        <div class="social-total-count">
+                                            <p class="follow-button">4570<span class="social-text">Twiter</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6 social-common-bar">
+                                        <div class="social-icon"><a href="#" target="_blank"><i class="facebook-icon fa fa-facebook"></i></a></div>
+                                        <div class="social-total-count">
+                                            <p class="follow-button">5423<span class="social-text">Facebook</span></p>
+                                        </div>
+                                    </div>
+                                </div><!-- //row -->
+                            </div> <!-- //social counter -->
+                            <!-- Advertisement sidebar 01 -->
+                            <div class="advertisement mtb30 mtt10">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="img/right-ad1.jpg" alt="advertisement">
+                                    </div>
+                                </div>
+                            </div> <!-- //Advertisement sidebar 01-->
+
+                            <!-- Advertisement sidebar 02 -->
+                            <div class="advertisement mtb30 mtt10">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="img/right-ad2.jpg" alt="advertisement">
+                                    </div>
+                                </div>
+                            </div> <!-- //Advertisement sidebar 02-->
+                            <!-- Advertisement sidebar 03 -->
+                            <div class="advertisement mtb30 mtt30">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="img/right-ad5.png" alt="advertisement">
+                                    </div>
+                                </div>
+                            </div> <!-- //Advertisement sidebar 03-->
+
+                        </div> <!-- //col-sm-3 -->
+                    </div> <!-- //row -->
+                </div> <!-- //container -->
+            </section>
+            <!--====  End of MAIN WRAPPER  ====-->
+            <!--==================================
+            =            START FOOTER            =
+            ===================================-->
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div id="bottom1" class="col-sm-6 col-md-3">
+                                <p class="footer-logo"><img src="img/logo.png" alt="logo"></p>
+                                <p class="footer-info">Kandire es un portal web de noticias enfocado a la transparencia.</p>
+                                <div class="footer-contact">
+                                    <p>
+                                        <span>Email:</span>
+                                        info@kandire.bo
+                                    </p>
+                                    <p>
+                                        <span>Telefono:</span>
+                                        33 040589
+                                    </p>
+                                </div>
+                            </div> <!-- //bottom1 -->
+
+                            <div id="bottom2" class="col-sm-6 col-md-3">
+                                <div class="bottom-menu">
+                                    <h3 class="title">Enlace Rapido</h3>
+                                    <div class="pull-left">
+                                        <ul class="menu">
+                                            <li><a href="#">Inicio</a></li>
+                                            <li><a href="#">Actualidad</a></li>
+                                            <li><a href="#">Deportes</a></li>
+                                            <li><a href="#">Tendencias.</a></li>
+                                            <li><a href="#">Sociales</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pull-right">
+                                        <ul class="menu">
+                                            <li><a href="#">Suplementos</a></li>
+                                            <li><a href="#">Servicios</a></li>
+                                            <li><a href="#">Clasificados</a></li>
+                                            <li><a href="#">Deportes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> <!-- //bottom2 -->
+
+                            <div id="bottom3" class="col-sm-6 col-md-3">
+                                <div class="">
+                                    <h3 class="title">Categorias</h3>
+                                    <div class="tags">
+                                        <a class="tag-name" href="#">Nacional</a>
+                                        <a class="tag-name" href="#">Deportes</a>
+                                        <a class="tag-name" href="#">Politica</a>
+                                        <a class="tag-name" href="#">Mundo</a>
+                                        <a class="tag-name" href="#">Clasificados</a>
+                                        <a class="tag-name" href="#">Moda</a>
+                                        <a class="tag-name" href="#">Cultura</a>
+                                        <a class="tag-name" href="#">Negocio</a>
+                                        <a class="tag-name" href="#">Arte</a>
+                                    </div>
+                                </div>
+                            </div> <!-- //bottom3 -->
+
+                            <div id="bottom4" class="col-sm-6 col-md-3">
+                                <div class="social-wrapper">
+                                    <h3 class="title">Social Link</h3>
+                                    <ul class="social-icons">
+                                        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                        <li><a target="_blank" href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                        <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                                        <li><a target="_blank" href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
+                                        <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- //bottom4 -->
+                        </div> <!-- //row -->
+                    </div>  <!-- //container -->
+                </div> <!-- //footer-wrapper -->
+
+                <div class="copyright-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <p class="copyright"> Copyright © 2017 <a href="http://servisis.com.bo/">Kandire.</a> Derechos Reservados.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <p class="pull-right">Design &amp; Devleopment by&nbsp;<a href="http://www.servisis.com.bo/">Servisis</a></p>
+                            </div>
+                        </div>  <!-- //row -->
+                    </div> <!-- //container -->
+                </div> <!-- //copyright-wrapper -->
+            </footer>
+            <!--====  End of FOOTER  ====-->
+            <!-- Offcanvas Start-->
+            <div class="offcanvas-overlay"></div>
+            <div class="offcanvas-menu visible-sm visible-xs">
+                <a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
+                <div class="offcanvas-inner">
+                    <h3 class="title">Buscar</h3>
+                    <div class="search">
+                        <form action="#" method="post">
+                            <input name="searchword" maxlength="200" class="inputbox search-query" type="text" placeholder="Buscar ...">
+                        </form>
+                    </div>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li class="active">
+                            <a href="index2.html">Sociales</a>
+                            <span role="button" class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-01" aria-expanded="false" aria-controls="collapse-menu-01"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+                            <ul class="collapse" id="collapse-menu-01" aria-expanded="false">
+                                <li class="active"><a href="index2.html">Nacional</a></li>
+                                <li class="active"><a href="index2.html">Local</a></li>
+                                <li class="active"><a href="index2.html">Mundo</a></li>
+                                <li class="active"><a href="index2.html">Ecnomia</a></li>
+                                <li class="active"><a href="index2.html">Cultura</a></li>
+                                <li class="active"><a href="index2.html">Editorial y Punto de Vista</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Deporte</a></li>
+                        <li>
+                            <a href="#">Tendencias</a>
+                            <span role="button" class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-02" aria-expanded="false" aria-controls="collapse-menu-02"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+                            <ul class="collapse" id="collapse-menu-02" aria-expanded="false">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Advertisement</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Coming Soon</a></li>
+                                <li><a href="#">404 Page</a></li>
+                                <li>
+                                    <a href="javascript:void(0)">Parent</a>
+                                    <span role="button" class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-03" aria-expanded="false" aria-controls="collapse-menu-03"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+                                    <ul class="collapse" id="collapse-menu-03" aria-expanded="false">
+                                        <li><a href="javascript:void(0)">Sub Child 01</a></li>
+                                        <li><a href="javascript:void(0)">Sub Child 02</a></li>
+                                        <li><a href="javascript:void(0)">Sub Child 03</a></li>
+                                        <li>
+                                            <a href="javascript:void(0)">Parent</a>
+                                            <span role="button" class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-04" aria-expanded="false" aria-controls="collapse-menu-04"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+                                            <ul class="collapse" id="collapse-menu-04" aria-expanded="false">
+                                                <li><a href="javascript:void(0)">Sub Child 01</a></li>
+                                                <li><a href="javascript:void(0)">Sub Child 02</a></li>
+                                                <li><a href="javascript:void(0)">Sub Child 03</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sociales</a></li>
+                        <li><a href="#">Suplementos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Clasificados2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end Offcanvas -->
+
+        </div> <!-- //body-innerwrapper -->
+        <!--/.style-chooser-->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <!-- select menu -->
+        <script src="js/classie.js"></script>
+        <script src="js/selectFx.js"></script>
+        <!-- slider -->
+        <script src="js/jquery.nanoscroller.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <!-- sitcky menu -->
+        <script src="js/jquery.sticky.js"></script>
+        <!-- custom js -->
+        <script src="js/main.js"></script>
+        <script src="js/switcher.js"></script>
+    </body>
+
+    <!-- Mirrored from demo.themeum.com/html/newedge/single-article.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Aug 2017 04:53:34 GMT -->
+</html>

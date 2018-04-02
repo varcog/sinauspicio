@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kandire</title>
+        <link rel="shortcut icon" href="img/favicon.png">        
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">        
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">        
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">       
+        <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">        
+        <link rel="stylesheet" href="dist/css/AdminLTE.min.css">        
+        <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">        
+    </head>
+    <body class="hold-transition skin-blue sidebar-collapse">
+        <div class="progress progress-xs progress-striped active" style="z-index: 88; position: inherit; display: none;" id="pgbars">
+            <div class="progress-bar progress-bar-success" style="width: 90%" id="pgbar"></div>
+        </div>
+        <div class="popup" style="display: none;"></div>
+        <div class="wrapper">
+            <div class="content-wrapper">                
+                <section class="content-header">
+                    <h1 id="tipo_noticia">Publicidad</h1>                
+                </section>                
+                <section class="content">                    
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <div class="box-header">
+                                    <div style="width:10%; height:10%">
+                                        <button type="button" class="btn btn-block btn-success btn-sm" onclick="nueva_publicidad();" >Nueva</button>
+                                    </div>
+                                    <br />
+                                    <h3 class="box-title">Todas para el Ingreso</h3>
+                                </div>                                
+                                <div class="box-body table-responsive no-padding">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Descripcion</th>
+                                                <th>Estado</th>
+                                                <th>Expiracion</th>
+                                                <th>Porcentaje Apariciones</th>                                                
+                                                <th>Imagen</th>                                                
+                                                <th>Eliminar</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody id="cuerpo">
+                                        </tbody>                                    
+                                    </table>
+                                </div>                                
+                            </div>                            
+                        </div>
+                    </div>
+                </section>                
+            </div>        
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>        
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>        
+        <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>        
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>        
+        <script src="dist/js/adminlte.min.js"></script>        
+        <script src="dist/js/demo.js"></script>
+        <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <script src="plugins/input-mask/jquery.inputmask.js"></script>
+        <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+        <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>        
+        <script type="text/javascript" src="js_ppl/publicidad.js"></script>
+    </body>
+</html>
