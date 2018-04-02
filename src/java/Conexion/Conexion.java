@@ -27,20 +27,19 @@ public class Conexion
         loggedIn=false;
         this.usr = usr;
         this.pass = pass;
-        this.baseDatos="kandire";
+        this.baseDatos="sinauspicio";
         this.puerto="5432";
-//        this.ip="localhost";
-        this.ip="172.168.0.29";
+        this.ip="sinauspicio";
         ifConnected();       
     }
     public Conexion()
     {        
         loggedIn=false;
-        this.usr = "postgres";
-        this.pass = "oracle123";
-        this.baseDatos="kandire";
+        this.usr = "sinauspicio";
+        this.pass = "sinauspicio";
+        this.baseDatos="sinauspicio";
         this.puerto="5432";
-        this.ip="172.168.0.29";
+        this.ip="sinauspicio";
         ifConnected();       
     }
     
